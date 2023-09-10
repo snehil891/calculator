@@ -181,7 +181,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
   void appendValue(String value) {
     if (value != Btn.dot && int.tryParse(value) == null) {
-      if (operand.isNotEmpty && number2.isEmpty) {
+      if (operand.isNotEmpty && number2.isNotEmpty) {
         calculateResult();
       }
       operand = value;
