@@ -53,7 +53,10 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     ),
                   )
                   .toList(),
-            )
+            ),
+            const SizedBox(
+              height: 20,
+            ),
           ],
         ),
       ),
